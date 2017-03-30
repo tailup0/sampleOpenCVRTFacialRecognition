@@ -34,7 +34,7 @@
 
 - (UIImage *)detect:(UIImage *)srcImage {
     
-    cv::Mat srcMat = [OpenCVHelper cvMatFromUIImage:srcImage];
+    cv::Mat srcMat = [self cvMatFromUIImage:srcImage];
     
     // グレースケール画像に変換
     cv::Mat grayMat;
@@ -58,10 +58,10 @@
         cv::circle(srcMat, center, radius, cv::Scalar(80,80,255), 3, 8, 0 );
     }
     
-    return [OpenCVHelper UIImageFromCVMat:srcMat];
+    return [self UIImageFromCVMat:srcMat];
 }
 
-+ (cv::Mat)cvMatFromUIImage:(UIImage *)image
+- (cv::Mat)cvMatFromUIImage:(UIImage *)image
 {
     CGColorSpaceRef colorSpace = CGImageGetColorSpace(image.CGImage);
     CGFloat cols = image.size.width;
@@ -85,7 +85,7 @@
     return cvMat;
 }
 
-+ (UIImage *)UIImageFromCVMat:(cv::Mat)cvMat
+- (UIImage *)UIImageFromCVMat:(cv::Mat)cvMat
 {
     NSData *data = [NSData dataWithBytes:cvMat.data length:cvMat.elemSize()*cvMat.total()];
     CGColorSpaceRef colorSpace;
