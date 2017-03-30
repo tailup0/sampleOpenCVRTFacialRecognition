@@ -5,5 +5,6 @@
 #import <UIKit/UIKit.h>
 
 @interface OpenCVHelper: NSObject
-+ (UIImage *)detect:(UIImage *)srcImage cascade:(NSString *)cascadeFilename;
+- (id)init;
+- (UIImage *)detect:(UIImage *)srcImage;
 @end

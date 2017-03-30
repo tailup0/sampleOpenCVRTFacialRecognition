@@ -30,7 +30,6 @@
 		7A784C1C1E8BA5840094E83D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A784C221E8BA6230094E83D /* sampleOpenCVRTFacialRecognition-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sampleOpenCVRTFacialRecognition-Bridging-Header.h"; sourceTree = "<group>"; };
 		7A784C231E8BA6230094E83D /* ObjCOpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjCOpenCV.mm; sourceTree = "<group>"; };
-		7A784C291E8BE3CC0094E83D /* ObjCOpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCOpenCV.h; sourceTree = "<group>"; };
 		7A784C2A1E8BF3D30094E83D /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		7A784C301E8CD14B0094E83D /* CameraUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraUtil.swift; sourceTree = "<group>"; };
 		E499D45D929DFAF14F7BD4E3 /* Pods-sampleOpenCVRTFacialRecognition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleOpenCVRTFacialRecognition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sampleOpenCVRTFacialRecognition/Pods-sampleOpenCVRTFacialRecognition.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,7 +84,6 @@
 				7A784C191E8BA5840094E83D /* LaunchScreen.storyboard */,
 				7A784C1C1E8BA5840094E83D /* Info.plist */,
 				7A784C231E8BA6230094E83D /* ObjCOpenCV.mm */,
-				7A784C291E8BE3CC0094E83D /* ObjCOpenCV.h */,
 				7A784C221E8BA6230094E83D /* sampleOpenCVRTFacialRecognition-Bridging-Header.h */,
 				7A784C321E8CEA370094E83D /* cascade */,
 			);

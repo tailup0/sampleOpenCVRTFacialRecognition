@@ -15,6 +15,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     var mySession : AVCaptureSession!
     var myDevice : AVCaptureDevice!
     var myOutput : AVCaptureVideoDataOutput!
+    let openCVHelper : OpenCVHelper = OpenCVHelper()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,7 +82,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         // uiimageへ変換
         let image = CameraUtil.imageFromSampleBuffer(sampleBuffer: sampleBuffer)
         // 顔認識
-        let faceImage = OpenCVHelper.detect(image, cascade: "haarcascade_frontalface_alt.xml")
+        let faceImage = openCVHelper.detect(image)
         DispatchQueue.main.async {
             // 表示
             self.imageView.image = faceImage

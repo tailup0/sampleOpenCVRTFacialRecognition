@@ -6,28 +6,39 @@
 //  Copyright © 2017年 Muneharu Onoue. All rights reserved.
 //
 
-#import "ObjCOpenCV.h"
+#import "sampleOpenCVRTFacialRecognition-Bridging-Header.h"
+#import <opencv2/opencv.hpp>
+
+@interface OpenCVHelper()
+{
+    cv::CascadeClassifier cascade;
+}
+@end
 
 @implementation OpenCVHelper: NSObject
 
-+ (UIImage *)detect:(UIImage *)srcImage cascade:(NSString *)cascadeFilename {
+- (id)init {
+    self = [super init];
+    
+    // 分類器の読み込み
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *path = [bundle pathForResource:@"haarcascade_frontalface_alt" ofType:@"xml"];
+    std::string cascadeName = (char *)[path UTF8String];
+    
+    if(!cascade.load(cascadeName)) {
+        return nil;
+    }
+    
+    return self;
+}
+
+- (UIImage *)detect:(UIImage *)srcImage {
     
     cv::Mat srcMat = [OpenCVHelper cvMatFromUIImage:srcImage];
     
     // グレースケール画像に変換
     cv::Mat grayMat;
     cv::cvtColor(srcMat, grayMat, CV_BGR2GRAY);
-    
-    // 分類器の読み込み
-    NSString *path = [[NSBundle mainBundle] pathForResource:cascadeFilename
-                                                     ofType:nil];
-    std::string cascade_path = (char *)[path UTF8String];
-    cv::CascadeClassifier cascade;
-    
-    if (!cascade.load(cascade_path)) {
-        NSLog(@"Couldn't load haar cascade file.");
-        return nil;
-    }
     
     // 探索
     std::vector<cv::Rect> objects;
