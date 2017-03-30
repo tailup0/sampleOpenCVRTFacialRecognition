@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A784C111E8BA5840094E83D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A784C101E8BA5840094E83D /* AppDelegate.swift */; };
+		7A784C131E8BA5840094E83D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A784C121E8BA5840094E83D /* ViewController.swift */; };
+		7A784C161E8BA5840094E83D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A784C141E8BA5840094E83D /* Main.storyboard */; };
+		7A784C181E8BA5840094E83D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A784C171E8BA5840094E83D /* Assets.xcassets */; };
+		7A784C1B1E8BA5840094E83D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A784C191E8BA5840094E83D /* LaunchScreen.storyboard */; };
+		7A784C241E8BA6230094E83D /* ObjCOpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A784C231E8BA6230094E83D /* ObjCOpenCV.mm */; };
+		7A784C2B1E8BF3D30094E83D /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7A784C2A1E8BF3D30094E83D /* haarcascade_frontalface_alt.xml */; };
+		7A784C311E8CD14B0094E83D /* CameraUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A784C301E8CD14B0094E83D /* CameraUtil.swift */; };
+		FA90B88A11B6DD0CE7104EFE /* Pods_sampleOpenCVRTFacialRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44811E0A91990483A84E8994 /* Pods_sampleOpenCVRTFacialRecognition.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29AC99E76EB452AC14810346 /* Pods-sampleOpenCVRTFacialRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleOpenCVRTFacialRecognition.release.xcconfig"; path = "Pods/Target Support Files/Pods-sampleOpenCVRTFacialRecognition/Pods-sampleOpenCVRTFacialRecognition.release.xcconfig"; sourceTree = "<group>"; };
+		44811E0A91990483A84E8994 /* Pods_sampleOpenCVRTFacialRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sampleOpenCVRTFacialRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A784C0D1E8BA5840094E83D /* sampleOpenCVRTFacialRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sampleOpenCVRTFacialRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A784C101E8BA5840094E83D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A784C121E8BA5840094E83D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A784C151E8BA5840094E83D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A784C171E8BA5840094E83D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A784C1A1E8BA5840094E83D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A784C1C1E8BA5840094E83D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A784C221E8BA6230094E83D /* sampleOpenCVRTFacialRecognition-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sampleOpenCVRTFacialRecognition-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A784C231E8BA6230094E83D /* ObjCOpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjCOpenCV.mm; sourceTree = "<group>"; };
+		7A784C291E8BE3CC0094E83D /* ObjCOpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCOpenCV.h; sourceTree = "<group>"; };
+		7A784C2A1E8BF3D30094E83D /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		7A784C301E8CD14B0094E83D /* CameraUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraUtil.swift; sourceTree = "<group>"; };
+		E499D45D929DFAF14F7BD4E3 /* Pods-sampleOpenCVRTFacialRecognition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleOpenCVRTFacialRecognition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sampleOpenCVRTFacialRecognition/Pods-sampleOpenCVRTFacialRecognition.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A784C0A1E8BA5840094E83D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA90B88A11B6DD0CE7104EFE /* Pods_sampleOpenCVRTFacialRecognition.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5046AFE71E6DEE580555A19D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44811E0A91990483A84E8994 /* Pods_sampleOpenCVRTFacialRecognition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A784C041E8BA5840094E83D = {
+			isa = PBXGroup;
+			children = (
+				7A784C0F1E8BA5840094E83D /* sampleOpenCVRTFacialRecognition */,
+				7A784C0E1E8BA5840094E83D /* Products */,
+				C581CC34B662465DE06D4065 /* Pods */,
+				5046AFE71E6DEE580555A19D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A784C0E1E8BA5840094E83D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A784C0D1E8BA5840094E83D /* sampleOpenCVRTFacialRecognition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A784C0F1E8BA5840094E83D /* sampleOpenCVRTFacialRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				7A784C101E8BA5840094E83D /* AppDelegate.swift */,
+				7A784C121E8BA5840094E83D /* ViewController.swift */,
+				7A784C301E8CD14B0094E83D /* CameraUtil.swift */,
+				7A784C141E8BA5840094E83D /* Main.storyboard */,
+				7A784C171E8BA5840094E83D /* Assets.xcassets */,
+				7A784C191E8BA5840094E83D /* LaunchScreen.storyboard */,
+				7A784C1C1E8BA5840094E83D /* Info.plist */,
+				7A784C231E8BA6230094E83D /* ObjCOpenCV.mm */,
+				7A784C291E8BE3CC0094E83D /* ObjCOpenCV.h */,
+				7A784C221E8BA6230094E83D /* sampleOpenCVRTFacialRecognition-Bridging-Header.h */,
+				7A784C321E8CEA370094E83D /* cascade */,
+			);
+			path = sampleOpenCVRTFacialRecognition;
+			sourceTree = "<group>";
+		};
+		7A784C321E8CEA370094E83D /* cascade */ = {
+			isa = PBXGroup;
+			children = (
+				7A784C2A1E8BF3D30094E83D /* haarcascade_frontalface_alt.xml */,
+			);
+			name = cascade;
+			sourceTree = "<group>";
+		};
+		C581CC34B662465DE06D4065 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E499D45D929DFAF14F7BD4E3 /* Pods-sampleOpenCVRTFacialRecognition.debug.xcconfig */,
+				29AC99E76EB452AC14810346 /* Pods-sampleOpenCVRTFacialRecognition.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A784C0C1E8BA5840094E83D /* sampleOpenCVRTFacialRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A784C1F1E8BA5840094E83D /* Build configuration list for PBXNativeTarget "sampleOpenCVRTFacialRecognition" */;
+			buildPhases = (
+				37FD56736BFAD46D8FDDE162 /* [CP] Check Pods Manifest.lock */,
+				7A784C091E8BA5840094E83D /* Sources */,
+				7A784C0A1E8BA5840094E83D /* Frameworks */,
+				7A784C0B1E8BA5840094E83D /* Resources */,
+				6027211BFF099060DB52F1A9 /* [CP] Embed Pods Frameworks */,
+				BBA03788A4B3FC3CA107E28A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sampleOpenCVRTFacialRecognition;
+			productName = sampleOpenCVRTFacialRecognition;
+			productReference = 7A784C0D1E8BA5840094E83D /* sampleOpenCVRTFacialRecognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A784C051E8BA5840094E83D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Muneharu Onoue";
+				TargetAttributes = {
+					7A784C0C1E8BA5840094E83D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9F3KC5MR2C;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7A784C081E8BA5840094E83D /* Build configuration list for PBXProject "sampleOpenCVRTFacialRecognition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A784C041E8BA5840094E83D;
+			productRefGroup = 7A784C0E1E8BA5840094E83D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A784C0C1E8BA5840094E83D /* sampleOpenCVRTFacialRecognition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A784C0B1E8BA5840094E83D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A784C1B1E8BA5840094E83D /* LaunchScreen.storyboard in Resources */,
+				7A784C181E8BA5840094E83D /* Assets.xcassets in Resources */,
+				7A784C2B1E8BF3D30094E83D /* haarcascade_frontalface_alt.xml in Resources */,
+				7A784C161E8BA5840094E83D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37FD56736BFAD46D8FDDE162 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6027211BFF099060DB52F1A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sampleOpenCVRTFacialRecognition/Pods-sampleOpenCVRTFacialRecognition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA03788A4B3FC3CA107E28A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sampleOpenCVRTFacialRecognition/Pods-sampleOpenCVRTFacialRecognition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A784C091E8BA5840094E83D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A784C131E8BA5840094E83D /* ViewController.swift in Sources */,
+				7A784C241E8BA6230094E83D /* ObjCOpenCV.mm in Sources */,
+				7A784C311E8CD14B0094E83D /* CameraUtil.swift in Sources */,
+				7A784C111E8BA5840094E83D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7A784C141E8BA5840094E83D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A784C151E8BA5840094E83D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A784C191E8BA5840094E83D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A784C1A1E8BA5840094E83D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A784C1D1E8BA5840094E83D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A784C1E1E8BA5840094E83D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A784C201E8BA5840094E83D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E499D45D929DFAF14F7BD4E3 /* Pods-sampleOpenCVRTFacialRecognition.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9F3KC5MR2C;
+				INFOPLIST_FILE = sampleOpenCVRTFacialRecognition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geelive.sampleOpenCVRTFacialRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sampleOpenCVRTFacialRecognition/sampleOpenCVRTFacialRecognition-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7A784C211E8BA5840094E83D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29AC99E76EB452AC14810346 /* Pods-sampleOpenCVRTFacialRecognition.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9F3KC5MR2C;
+				INFOPLIST_FILE = sampleOpenCVRTFacialRecognition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geelive.sampleOpenCVRTFacialRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sampleOpenCVRTFacialRecognition/sampleOpenCVRTFacialRecognition-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A784C081E8BA5840094E83D /* Build configuration list for PBXProject "sampleOpenCVRTFacialRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A784C1D1E8BA5840094E83D /* Debug */,
+				7A784C1E1E8BA5840094E83D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A784C1F1E8BA5840094E83D /* Build configuration list for PBXNativeTarget "sampleOpenCVRTFacialRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A784C201E8BA5840094E83D /* Debug */,
+				7A784C211E8BA5840094E83D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A784C051E8BA5840094E83D /* Project object */;
+}
